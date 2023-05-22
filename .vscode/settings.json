@@ -1,0 +1,87 @@
+{
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "%DOCFILE_EXT%"
+            ]
+        },
+        {
+            "name": "diff",
+            "command": "sh",
+            "args": [
+                "/workdir/bin/diff.sh"
+            ]
+        },
+        {
+            "name": "svg2png",
+            "command": "sh",
+            "args": [
+                "/workdir/bin/svg2png.sh"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "compile",
+            "tools": [
+                "latexmk",
+            ]
+        },
+        // {
+        //     "name": "create_diff",
+        //     "tools": [
+        //         "diff",
+        //     ]
+        // },
+        // {
+        //     "name": "convert svg to png",
+        //     "tools": [
+        //         "svg2png",
+        //     ]
+        // }
+    ],
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.fdb_latexmk",
+        "*.synctex.gz",
+        "_minted*",
+        "*.nav",
+        "*.snm",
+        "*.vrb",
+        "*.run.xml",
+        "*.dvi",
+        "*.fdb_latexmk",
+        "*.fls",
+        "*.toc",
+        "*.bcf",
+        //"*.log",
+        //"*/*.log"
+    ],
+    "latex-workshop.latexindent.path": "sh",
+    "latex-workshop.latexindent.args": [
+        "/workdir/bin/linter.sh",
+    ],
+    "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?．。，、（）「」［］｛｝《》てにをはがのともへでや",
+    "editor.formatOnSave": false
+}
